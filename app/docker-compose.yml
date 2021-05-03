@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  app:
+    build: .
+    command: ["python", "app.py"]
+    healthcheck: 
+        test: "curl -f 127.0.0.1:4444/"
+        interval: 1m30s
+        timeout: 10s
+        retries: 3
+        start_period: 30s
+    ports:
+      - "127.0.0.1:4444:4444"
+    restart: always
