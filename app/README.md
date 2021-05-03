@@ -11,8 +11,12 @@ NOTE: Docker must be installed to run this app, see [https://docs.docker.com/get
 
 4. Test with an API testing development. I used Postman, see screenshots in screenshots/ for examples.
 
-5. To stop container, run
+5. To stop container, run:
+    <br />
     'docker ps' to get container id
-    'docker stop <container-id>' to stop container
-    'docker rm <container-id>' to remove container
+    <br />
+    'docker stop `container-id`' to stop container
+    <br />
+    'docker rm `container-id`' to remove container
+    <br />
     'docker image rm app_app' to remove image
